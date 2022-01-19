@@ -5,8 +5,14 @@ const RightSide = () => {
     <div>
       <LeftShowCase>
         <FlexDaba>
-          <PakistaniCases></PakistaniCases>
-          <TotalDeaths></TotalDeaths>
+          <PakistaniCases>
+            <h6>Total Deaths</h6>
+            <h2 style={{ color: "lightblue" }}>432378</h2>
+          </PakistaniCases>
+          <TotalDeaths>
+            <h6>Total Test Conducted in US</h6>
+            <h2 style={{ color: "lightblue" }}>432378</h2>
+          </TotalDeaths>
         </FlexDaba>
 
         <Graphs />
@@ -23,7 +29,7 @@ const LeftShowCase = styled.div`
   float: right;
   background: 414141;
   color: white;
-  border: 2px solid white;
+
   display: flex;
   flex-direction: column;
 `;
@@ -35,7 +41,8 @@ const TotalDeaths = styled.div`
   margin-right: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
-  border: 2px solid white;
+  border: 0.1px solid #435055;
+
   background: #2b2b2b;
 `;
 
@@ -44,7 +51,8 @@ const PakistaniCases = styled.div`
   width: 190px;
   margin: 10px;
   color: white;
-  border: 2px solid white;
+  border: 0.1px solid #435055;
+
   background: #2b2b2b;
 `;
 
@@ -62,6 +70,7 @@ const FlexBigBox = styled.div`
 const Graphs = styled.div`
   height: 40rem;
   width: 24rem;
-  border: 2px solid white;
+  border: 0.1px solid #435055;
+
   margin: 10px;
 `;

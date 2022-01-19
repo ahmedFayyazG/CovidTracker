@@ -52,9 +52,11 @@ const FlexBox = styled.div`
 `;
 
 const NavBar = styled.div`
-  height: 1.5em;
+  height: 1.8em;
   width: 100%;
   color: white;
-  border: 2px solid white;
+  border: 0.1px solid #435055;
+  background: gray;
   position: absoulte;
+  margin-bottom: 10px;
 `;

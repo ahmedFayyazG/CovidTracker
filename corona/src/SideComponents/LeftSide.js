@@ -4,8 +4,24 @@ const LeftSide = () => {
   return (
     <div>
       <LeftShowCase>
-        <TotalConfirmed></TotalConfirmed>
-        <ConfirmedCasesByCountry></ConfirmedCasesByCountry>
+        <TotalConfirmed>
+          <h6 style={{ fontFamily: "revert", margin: "20px" }}>
+            {" "}
+            Total Confirmed
+          </h6>
+          <h1
+            style={{
+              color: "red",
+              fontFamily: "sans-serif",
+              fontWeight: "bolder",
+            }}
+          >
+            2132012
+          </h1>
+        </TotalConfirmed>
+        <ConfirmedCasesByCountry>
+          <h9>Confirmed Cases by Countries/Region/Soverieghty</h9>
+        </ConfirmedCasesByCountry>
       </LeftShowCase>
     </div>
   );
@@ -18,7 +34,6 @@ const LeftShowCase = styled.div`
   width: 15em;
   background: 414141;
   color: white;
-  border: 2px solid white;
   display: flex;
   flex-direction: column;
 `;
@@ -30,6 +45,8 @@ const TotalConfirmed = styled.div`
   background: #2b2b2b;
   margin-bottom: 10px;
   margin-top: 10px;
+  border: 0.1px solid #435055;
+
   margin-left: 10px;
 `;
 
@@ -39,5 +56,7 @@ const ConfirmedCasesByCountry = styled.div`
   color: white;
   background: #2b2b2b;
   margin-bottom: 10px;
+  border: 0.1px solid #435055;
+
   margin-left: 10px;
 `;
